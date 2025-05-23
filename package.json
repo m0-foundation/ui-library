@@ -1,6 +1,6 @@
 {
   "name": "@m0-foundation/ui-library",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "M0 Foundation UI Component Library based on Vue 3 and Tailwind CSS",
   "main": "dist/ui-library.umd.js",
   "module": "dist/ui-library.es.js",
