@@ -1,0 +1,51 @@
+# Development files
+.git
+.gitignore
+.npmignore
+.editorconfig
+.eslintrc
+.prettierrc
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+
+# Demo
+demo/
+demo-dist/
+
+# Source files that are not needed in the package
+src/**/*.test.ts
+src/**/*.spec.ts
+src/**/*.stories.ts
+src/**/*.stories.vue
+
+# Development dependencies
+node_modules/
+
+# Build files
+*.map
+*.d.ts.map
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env*
+!.env.example
+
+# Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db 
