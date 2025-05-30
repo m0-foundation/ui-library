@@ -3,9 +3,6 @@
 .gitignore
 .npmignore
 .editorconfig
-.eslintrc
-.prettierrc
-tsconfig.json
 tsconfig.node.json
 vite.config.ts
 

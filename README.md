@@ -20,31 +20,61 @@ yarn add vue-router
 npm install vue-router
 ```
 
+## Tailwind CSS Setup
+
+This library requires Tailwind CSS to be installed and configured in your project.
+
+### For Vue 3 (Vite)
+
+1. Install Tailwind CSS:
+   ```sh
+   pnpm add -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
+   ```
+
+2. In your `tailwind.config.js`:
+   ```js
+   const m0Preset = require('@m0-foundation/ui-library/tailwind.preset')
+   module.exports = {
+     presets: [m0Preset],
+     // Your custom configuration
+     theme: {
+       extend: {
+         // Override default colors if needed
+         colors: {
+           primary: colors.blue, // or any other color
+           secondary: colors.gray,
+         }
+       }
+     }
+   }
+   ```
+
+### For Nuxt 3
+
+1. Install Tailwind module:
+   ```sh
+   pnpm add -D @nuxtjs/tailwindcss
+   ```
+
+2. In your `nuxt.config.ts`:
+   ```ts
+   export default defineNuxtConfig({
+     modules: ['@nuxtjs/tailwindcss'],
+     tailwindcss: {
+       config: {
+         presets: [require('@m0-foundation/ui-library/tailwind.preset')],
+         // ...your config
+       }
+     }
+   })
+   ```
+
+See the [Tailwind CSS docs](https://tailwindcss.com/docs/installation) for more details.
+
 ## Usage
 
-### 1. Configure Tailwind CSS
-
-In your project's `tailwind.config.js`:
-
-```js
-const m0Preset = require('@m0-foundation/ui-library/tailwind.preset')
-
-module.exports = {
-  presets: [m0Preset],
-  // Your custom configuration
-  theme: {
-    extend: {
-      // Override default colors if needed
-      colors: {
-        primary: colors.blue, // or any other color
-        secondary: colors.gray,
-      }
-    }
-  }
-}
-```
-
-### 2. Import Components
+### 1. Import Components
 
 #### Global Registration
 
@@ -70,7 +100,7 @@ import { MHeader, MFooter } from '@m0-foundation/ui-library'
     <template #logo>
       <img src="logo.png" alt="Logo" />
     </template>
-    <template #navigation>
+    <template #nav>
       <a href="/">Home</a>
       <a href="/about">About</a>
     </template>

@@ -31,7 +31,7 @@ const props = defineProps({
 
       <!-- Right: Slot -->
       <div class="flex justify-end">
-        <slot />
+        <slot name="right" />
       </div>
     </div>
   </header>
