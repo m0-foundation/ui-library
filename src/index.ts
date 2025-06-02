@@ -3,8 +3,8 @@ import MHeader from './components/MHeader.vue'
 import MFooter from './components/MFooter.vue'
 import MIcon from './components/Icon/MIcon.vue'
 import MIconCopy from './components/Icon/MIconCopy.vue'
-import MIconTokenM from './components/Icon/tokens/MIconTokenM.vue'
-import MIconTokenWM from './components/Icon/tokens/MIconTokenWM.vue'
+import MIconTokenM from './components/Icon/Tokens/MIconTokenM.vue'
+import MIconTokenWM from './components/Icon/Tokens/MIconTokenWM.vue'
 
 // Export individual components
 export { MHeader, MFooter, MIcon, MIconCopy, MIconTokenM, MIconTokenWM }
