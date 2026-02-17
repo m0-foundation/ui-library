@@ -22,8 +22,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import MIconCheck from '../Icons/UI/MIconCheck.vue'
-import MIconCopy from '../Icons/UI/MIconCopyAlt.vue'
+import MIconCheck from '../icons/ui/MIconCheck.vue'
+import MIconCopy from '../icons/ui/MIconCopyAlt.vue'
 
 export interface MAddressCopyProps {
   address: string

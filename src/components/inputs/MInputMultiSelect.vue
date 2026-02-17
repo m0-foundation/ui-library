@@ -117,8 +117,8 @@
 import { ref } from 'vue'
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import { Dropdown as VDropdown, hideAllPoppers } from 'floating-vue'
-import MIconPower from '../Icons/_internal/MIconPower.vue'
-import MIconZero from '../Icons/_internal/MIconZero.vue'
+import MIconPower from '../icons/_internal/MIconPower.vue'
+import MIconZero from '../icons/_internal/MIconZero.vue'
 
 const largerThanSm = useBreakpoints(breakpointsTailwind).greater('sm')
 
