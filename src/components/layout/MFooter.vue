@@ -80,9 +80,9 @@
 </template>
 
 <script setup lang="ts">
-import twitterIcon from "../assets/icons/twitter.svg";
-import linkedinIcon from "../assets/icons/linkedin.svg";
-import githubIcon from "../assets/icons/github.svg";
+import twitterIcon from "../../assets/icons/twitter.svg";
+import linkedinIcon from "../../assets/icons/linkedin.svg";
+import githubIcon from "../../assets/icons/github.svg";
 
 const socialLinks = [
   {

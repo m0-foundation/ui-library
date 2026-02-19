@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MIcon from "../MIcon.vue";
+import MIcon from "../_internal/MIcon.vue";
 
 defineProps({
   size: {
