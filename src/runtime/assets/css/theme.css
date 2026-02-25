@@ -1,0 +1,75 @@
+@theme {
+  /* M0 Brand Colors — Grey */
+  --color-grey-100: #E0ECF5;
+  --color-grey-200: #F3F8FC;
+  --color-grey-300: #AEAFAE;
+  --color-grey-400: #868886;
+  --color-grey-500: #728DA5;
+  --color-grey-600: #4B6378;
+  --color-grey-700: #2D3B48;
+  --color-grey-800: #171E26;
+  --color-grey-900: #000D0A;
+  --color-grey-1000: #0B0B0B;
+  --color-grey-light: #F3F8FC;
+
+  /* M0 Brand Colors — Green */
+  --color-green-100: #E6FFF9;
+  --color-green-200: #A0D9B2;
+  --color-green-300: #99FFE7;
+  --color-green-400: #66FFDA;
+  --color-green-500: #33FFCE;
+  --color-green-600: #13B361;
+  --color-green-700: #07F7BD;
+  --color-green-800: #009974;
+  --color-green-900: #00664E;
+  --color-green-1000: #003327;
+
+  /* M0 Brand Colors — Red */
+  --color-red-100: #FFE6E6;
+  --color-red-200: #FFCCCC;
+  --color-red-300: #FF9999;
+  --color-red-400: #FF6666;
+  --color-red-500: #FF3333;
+  --color-red-600: #EA3323;
+  --color-red-700: #CC0000;
+  --color-red-800: #990000;
+  --color-red-900: #660000;
+  --color-red-1000: #330000;
+
+  /* M0 Brand Colors — Accent */
+  --color-secondary-dark: #20221F;
+  --color-secondary-light: #FFFFFF;
+  --color-accent-blue: #3759BA;
+  --color-accent-mint: #07F7BD;
+  --color-accent-success: #5CC99E;
+  --color-accent-teal: #007E89;
+  --color-alert-success: #13B361;
+  --color-alert-error: #DA1E28;
+  --color-blue-light-grey: #E9F0F7;
+  --color-blue-grey: #C1C5DD;
+  --color-blue-400: #2154D9;
+  --color-blue-800: #4659A6;
+
+  /* M0 Chart Colors */
+  --color-chart-sequential-900: #4761AC;
+  --color-chart-sequential-800: #5267B9;
+  --color-chart-sequential-700: #6579C9;
+  --color-chart-sequential-600: #7688D4;
+  --color-chart-sequential-500: #8798DD;
+  --color-chart-sequential-400: #9BA9E6;
+  --color-chart-sequential-300: #A8B7F1;
+  --color-chart-sequential-200: #BDC9FA;
+  --color-chart-sequential-100: #CFD9FC;
+
+  /* M0 Fonts */
+  --font-sans: 'Inter var', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-ppformula: 'PPFormula', 'IBM Plex Mono', monospace, sans-serif;
+
+  /* M0 Font Sizes */
+  --font-size-xxs: 0.65rem;
+
+  /* M0 Letter Spacing */
+  --letter-spacing-widest: 1.0em;
+}
