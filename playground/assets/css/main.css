@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import "../../../src/runtime/assets/css/theme.css";
+
+@source "../../../src/runtime/components/";
+@source "../../../src/runtime/composables/";

@@ -1,55 +1,32 @@
 {
   "name": "@m0-foundation/ui-library",
-  "version": "0.1.14",
-  "description": "M0 Foundation UI Component Library based on Vue 3 and Tailwind CSS",
-  "main": "dist/ui-library.umd.js",
-  "module": "dist/ui-library.es.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.0",
+  "description": "M0 Foundation UI components as a Nuxt module — token/chain icons, address display, layout, and Web3 connect",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/ui-library.es.js",
-      "require": "./dist/ui-library.umd.js"
-    },
-    "./tailwind.preset.js": "./src/tailwind.preset.js"
+      "import": "./dist/module.mjs"
+    }
   },
+  "main": "./dist/module.mjs",
+  "types": "./dist/types.d.mts",
   "files": [
-    "dist",
-    "src/tailwind.preset.js",
-    "src/components",
-    "src/index.ts"
+    "dist"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --declaration --emitDeclarationOnly && vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "dev": "nuxi dev playground",
+    "build": "nuxt-module-build build",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "@vueuse/core": "^10.0.0 || ^14.0.0",
-    "floating-vue": "^5.0.0",
-    "tailwindcss": "^3.3.0",
-    "vue": "^3.3.0",
-    "vue-router": "^4.0.0"
+    "nuxt": "^3.9.0 || ^4.0.0"
   },
   "devDependencies": {
-    "@vueuse/core": "^14.1.0",
-    "floating-vue": "^5.2.2",
-    "@types/node": "^20.0.0",
-    "@vitejs/plugin-vue": "^4.5.0",
-    "@vue/tsconfig": "^0.4.0",
-    "autoprefixer": "^10.4.0",
-    "eslint": "^8.0.0",
-    "eslint-plugin-vue": "^9.0.0",
-    "postcss": "^8.4.0",
-    "prettier": "^3.0.0",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5.0.0",
-    "vite": "^6.3.5",
-    "vue-router": "^4.0.0",
-    "vue-tsc": "^2.2.10"
-  },
-  "dependencies": {
-    "vue-router": "^4.0.0"
+    "@nuxt/kit": "^3.15.0",
+    "@nuxt/module-builder": "^0.8.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "nuxt": "^3.15.0",
+    "tailwindcss": "^4.2.1",
+    "vue": "^3.5.0"
   }
 }
