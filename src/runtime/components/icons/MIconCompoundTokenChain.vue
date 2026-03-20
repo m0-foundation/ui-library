@@ -16,6 +16,14 @@ import MIconTokenAusd from './tokens/MIconTokenAusd.vue'
 import MIconTokenUsdsc from './tokens/MIconTokenUsdsc.vue'
 import MIconTokenUsdt0 from './tokens/MIconTokenUsdt0.vue'
 import MIconTokenWmEth from './tokens/MIconTokenWmEth.vue'
+import MIconTokenUsdat from './tokens/MIconTokenUsdat.vue'
+import MIconTokenUsdx from './tokens/MIconTokenUsdx.vue'
+import MIconTokenUsd8 from './tokens/MIconTokenUsd8.vue'
+import MIconTokenCitrea from './tokens/MIconTokenCitrea.vue'
+import MIconTokenXo from './tokens/MIconTokenXo.vue'
+import MIconTokenUsdTel from './tokens/MIconTokenUsdTel.vue'
+import MIconTokenMrusd from './tokens/MIconTokenMrusd.vue'
+import MIconTokenFallback from './tokens/MIconTokenFallback.vue'
 
 import MIconChainEthereum from './chains/MIconChainEthereum.vue'
 import MIconChainSolana from './chains/MIconChainSolana.vue'
@@ -28,8 +36,10 @@ import MIconChainBsc from './chains/MIconChainBsc.vue'
 import MIconChainMantra from './chains/MIconChainMantra.vue'
 import MIconChainPlasma from './chains/MIconChainPlasma.vue'
 import MIconChainSoneium from './chains/MIconChainSoneium.vue'
+import MIconChainPolygon from './chains/MIconChainPolygon.vue'
+import MIconChainFallback from './chains/MIconChainFallback.vue'
 
-const tokenComponents: Record<TokenName, unknown> = {
+const tokenComponents: Record<string, unknown> = {
   'usdc': MIconTokenUsdc,
   'usdai': MIconTokenUsdai,
   'musd': MIconTokenMusd,
@@ -44,9 +54,16 @@ const tokenComponents: Record<TokenName, unknown> = {
   'usdsc': MIconTokenUsdsc,
   'usdt0': MIconTokenUsdt0,
   'wm-eth': MIconTokenWmEth,
+  'usdat': MIconTokenUsdat,
+  'usdx': MIconTokenUsdx,
+  'usd8': MIconTokenUsd8,
+  'citrea': MIconTokenCitrea,
+  'xo': MIconTokenXo,
+  'usd-tel': MIconTokenUsdTel,
+  'mrusd': MIconTokenMrusd,
 }
 
-const chainComponents: Record<ChainName, unknown> = {
+const chainComponents: Record<string, unknown> = {
   'ethereum': MIconChainEthereum,
   'solana': MIconChainSolana,
   'arbitrum': MIconChainArbitrum,
@@ -58,17 +75,18 @@ const chainComponents: Record<ChainName, unknown> = {
   'mantra': MIconChainMantra,
   'plasma': MIconChainPlasma,
   'soneium': MIconChainSoneium,
+  'polygon': MIconChainPolygon,
 }
 
 const props = defineProps<{
-  token: TokenName
-  chain: ChainName
+  token: TokenName | string
+  chain: ChainName | string
   size?: number
 }>()
 
 const size = computed(() => props.size ?? 32)
-const tokenComponent = computed(() => tokenComponents[props.token])
-const chainComponent = computed(() => chainComponents[props.chain])
+const tokenComponent = computed(() => tokenComponents[props.token] ?? MIconTokenFallback)
+const chainComponent = computed(() => chainComponents[props.chain] ?? MIconChainFallback)
 
 const badgeSize = computed(() => Math.round(size.value * 0.44))
 const badgeOffset = computed(() => -Math.round(size.value * 0.06))

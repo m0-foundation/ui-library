@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import iconUrl from '../../../assets/icons/tokens/grid.svg'
+import iconUrl from '../../../assets/icons/tokens/grid.png'
 
 defineProps<{
   size?: string | number
