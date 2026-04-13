@@ -15,6 +15,7 @@
   ],
   "scripts": {
     "dev": "nuxi dev playground",
+    "prebuild": "nuxi prepare",
     "build": "nuxt-module-build build",
     "prepublishOnly": "npm run build"
   },
