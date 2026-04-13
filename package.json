@@ -1,6 +1,6 @@
 {
   "name": "@m0-foundation/ui-library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "M0 Foundation UI components as a Nuxt module — token/chain icons, address display, layout, and Web3 connect",
   "type": "module",
   "exports": {
